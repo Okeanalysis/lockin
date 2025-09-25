@@ -16,12 +16,15 @@ while not end:
 
     for position in range(length):
         letter= wya[position]
-        print(f"current position: {position}\n current lettter: {letter}\n guessed letter: {result}")
+        
 
         if letter== result:
             list[position]= letter
 
     print(list)
+    if '_' not in list:
+        end = True
+        print("you win")
 
 
 
